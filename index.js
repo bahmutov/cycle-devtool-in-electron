@@ -10,7 +10,7 @@ if (!pageToOpen) {
 }
 
 electron.app.on('ready', () => {
-  const win = new electron.BrowserWindow({width: 1000, height: 500});
+  const win = new electron.BrowserWindow({width: 1000, height: 700});
   if (exists(pageToOpen)) {
     const fullFilename = resolve(pageToOpen)
     console.log('Opening local file', fullFilename)

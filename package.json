@@ -1,15 +1,17 @@
 {
   "name": "cycle-devtool-in-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "Opens a local file or remote URL in Electron with Cycle DevTool panel",
   "main": "index.js",
   "scripts": {
-    "start": "electron . example/index.html",
+    "start": "electron .",
+    "example": "electron . example/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cycle", "cycle.js", "electron", "devtools"],
+  "author": "Gleb Bahmutov",
   "license": "ISC",
+  "private": true,
   "devDependencies": {
     "electron": "^1.6.5",
     "electron-load-devtool": "^0.5.1"
